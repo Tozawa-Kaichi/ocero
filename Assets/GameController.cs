@@ -37,6 +37,13 @@ public class GameController : MonoBehaviour
     }
     void UpdateStonesState()
     {
-
+        //ƒuƒƒbƒN‚Ìó‘Ô”½‰f
+        for (int i = 0; i < 8; i++)
+        {
+            for (int j = 0; j < 8; j++)
+            {
+                _stones[i, j].SetState();
+            }
+        }
     }
 }
