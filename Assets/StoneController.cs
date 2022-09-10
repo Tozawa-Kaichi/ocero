@@ -18,7 +18,7 @@ public class StoneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateStonesState();
+        
     }
     public void SetColler(bool isUpFace)
     {
@@ -41,8 +41,5 @@ public class StoneController : MonoBehaviour
         }
         SetColler(stonesState == StonesState.Face);
     }
-    void UpdateStonesState()
-    {
-
-    }
+    
 }

@@ -9,6 +9,9 @@ public class GameController : MonoBehaviour
     //石の実体インスタンス
     GameObject[,] _blocks = new GameObject[8,8];
     StoneController[,] _stones = new StoneController[8, 8];
+
+    //最終的な石の状態
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,10 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateStonesState();
+    }
+    void UpdateStonesState()
+    {
+
     }
 }
