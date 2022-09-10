@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("a");
         //èâä˙ê›íË
         for(int i =0;i < 8;i++)
         {
@@ -21,6 +22,7 @@ public class GameController : MonoBehaviour
                 StoneController newController = newobject.GetComponent<StoneController>();
                 newobject.transform.localPosition = new Vector3(j, 0, i);
                 _blocks[i, j] = newobject;
+                _stones[i, j] = newController;
             }
         }
     }
